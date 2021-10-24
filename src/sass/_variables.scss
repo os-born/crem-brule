@@ -1,0 +1,44 @@
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
+$transition-hover-focus: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$min-width-mobile: 480px;
+$min-width-tablet: 768px;
+$min-width-desktop: 1280px;
+$max-width-mobile: 767px;
+$max-width-tablet: 1279px;
+
+$title-font-family: 'Titan One', cursive;
+$primary-font-family: 'DM Sans', sans-serif;
+$primary-text-color: #000000;
+$modal-window-background: #e17992;
+$secondary-text-color: #907e82;
+$primary-background: #e5e5e5;
+$white-color: #ffffff;
+$dark-pink-color: #ffa5ba;
+$background-pink: #ffb8ca;
+$background-coffee: #f0d1a5;
+$background-green: #c2e297;
+$background-light-pink: #fff5f6;
+$btn-locations: #d41342;
+$social-links-svg: #fea5bb;
+$hover-grey-btn: #ecebeb;
+$hover-crimson-btn: #c7133e;
+$drop-menu-links-border: #e18298;
+$text-color-title: #d41443;
+$background-reviews: #e1e1e1;
+$background-reviews-light:#fafafa;
+
+// colors
+
+// $black-color: #000000;
+// $background-accent-light-color:#FFF5F6;
+// $background-beige:#F0D1A5;
+// $background-label: #ffa5ba;
+// $background-hover: #c7133e;

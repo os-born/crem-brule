@@ -1,0 +1,159 @@
+.advantages-section {
+  background-color: $background-light-pink;
+  width: 100%;
+  font-family: Titan One, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: $text-color-title;
+  @media screen and (min-width: 320px) {
+ 
+  }
+  @media screen and (min-width: $min-width-tablet) {
+    // padding-bottom: 140px;
+  }
+  @media screen and (min-width: $min-width-desktop) {
+    padding-bottom: 139px;
+  }
+
+  &.container {
+    min-width: 320px;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    @media screen and (min-width: 320px) {
+      max-width: 320px;
+    }
+    @media screen and (min-width: $min-width-mobile) {
+      max-width: $min-width-mobile;
+    }
+    @media screen and (min-width: $min-width-tablet) {
+      max-width: $min-width-tablet;
+    }
+    @media screen and (min-width: $min-width-desktop) {
+      width: $min-width-desktop;
+    }
+  }
+  &__list {
+    @extend %list;
+    padding-right: 50px;
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 38px;
+    padding-bottom: 97px;
+    @media screen and (min-width: $min-width-tablet) {
+      // flex-direction: row;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 60px;
+      padding: 0 56px 140px 16px;
+    }
+    @media screen and (min-width: $min-width-desktop) {
+      padding: 0 95px;
+      grid-gap: 30px;
+    }
+  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: 104px;
+  //   @media screen and (min-width: $min-width-tablet) {
+  //     margin-bottom: 0;
+  //     margin-right: 60px;
+  //   }
+  //   @media screen and (min-width: $min-width-desktop) {
+  //     margin-right: 30px;
+  //   }
+  // }
+  .advantages-wrapper {
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @media screen and (min-width: $min-width-tablet) {
+      font-size: 48px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: $min-width-desktop) {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+    &__quantity--first {
+      &::before {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-size: cover;
+        background-image: url('../images/advantages/x1/icon1-advantages.png');
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/advantages/x2/icon1-advantages@2x.png');
+        }
+        @media screen and (min-width: $min-width-tablet) {
+          margin-bottom: 36px;
+        }
+        @media screen and (min-width: $min-width-desktop) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &__quantity--second {
+      &::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-size: cover;
+        background-image: url('../images/advantages/x1/icon2-advantages.png');
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/advantages/x2/icon2-advantages@2x.png');
+        }
+        @media screen and (min-width: $min-width-tablet) {
+          margin-bottom: 36px;
+        }
+        @media screen and (min-width: $min-width-desktop) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &__quantity--thirty {
+      &::before {
+        content: '';
+        display: block;
+        width: 44px;
+        height: 50px;
+        margin-bottom: 16px;
+        background-size: cover;
+        background-image: url('../images/advantages/x1/icon3-advantages.png');
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/advantages/x2/icon3-advantages@2x.png');
+        }
+        @media screen and (min-width: $min-width-tablet) {
+          margin-bottom: 36px;
+        }
+        @media screen and (min-width: $min-width-desktop) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &__text {
+      font-family: DM Sans, sans-serif;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0;
+      text-transform: none;
+      color: $primary-text-color;
+      margin-top: 15px;
+      @media screen and (min-width: $min-width-tablet) {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      @media screen and (min-width: $min-width-desktop) {
+        font-size: 16px;
+        line-height: 1.68;
+      }
+    }
+  }
+}

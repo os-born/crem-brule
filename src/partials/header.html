@@ -1,0 +1,80 @@
+<header class="header">
+  <div class="container header-container">
+    <div class="header__mobile">
+      <a class="logo" href="./index.html">
+        <picture>
+          <source
+            srcset="
+              ../src/images/hero/common/logo.webp    199w,
+              ../src/images/hero/common/logo@2x.webp 398w
+            "
+            type="image/webp"
+            sizes="199px"
+          />
+          <img
+            srcset="
+              ../src/images/hero/common/logo.png    199w,
+              ../src/images/hero/common/logo@2x.png 398w
+            "
+            src="../src/images/hero/common/logo.png"
+            alt="Логотип"
+            sizes="199px"
+          />
+        </picture>
+      </a>
+      <button
+        class="header__burger-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-open
+      >
+        <svg class="header__menu-icon" aria-label="Кнопка открытия мобильного меню">
+          <use href="../src/images/sprite.svg/#burger-2"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__drop-menu" id="mobile-menu" data-menu>
+      <button class="drop-menu__button-close" data-menu-close>
+        <svg class="drop-menu__button-close-icon" aria-label="Кнопка закрытия мобильного меню">
+          <use href="../src/images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="button drop-menu__button">
+        <span class="button-wrapper">
+          Buy now
+          <svg class="button-icon">
+            <use href="../src/images/sprite.svg#arrow-btn-2"></use>
+          </svg>
+        </span>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-ltem">
+            <a class="navigation__list-ltem-link" href="#hero">Home</a>
+          </li>
+          <li class="navigation__list-ltem">
+            <a class="navigation__list-ltem-link" href="#slider">About us</a>
+          </li>
+          <li class="navigation__list-ltem">
+            <a class="navigation__list-ltem-link" href="#him-section">How it’s made?</a>
+          </li>
+          <li class="navigation__list-ltem">
+            <a class="navigation__list-ltem-link" href="#products">Our products</a>
+          </li>
+          <li class="navigation__list-ltem">
+            <a class="navigation__list-ltem-link" href="#location">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="button header-button">
+      <span class="button-wrapper">
+        Buy now<svg class="button-icon">
+          <use href="../src/images/sprite.svg#arrow-btn-2"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
+</header>
+

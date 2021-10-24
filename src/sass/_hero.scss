@@ -1,0 +1,450 @@
+.hero .container {
+  position: relative;
+  height: 100%;
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 88%;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.hero .wrapper {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+
+  @media screen and (min-width: $min-width-tablet) {
+    top: 0%;
+  }
+}
+.hero {
+  margin: 0 auto;
+  height: 502px;
+  min-width: 320px;
+  background-color: $background-pink;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  @media screen and (max-width: $max-width-mobile) {
+    padding-top: 137px;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    padding-top: 102px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1080px) {
+    padding-top: 120px;
+    height: 420px;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    padding-top: 171px;
+    height: 665px;
+  }
+}
+.hero {
+  &__title {
+    font-family: $title-font-family;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    max-width: 218px;
+    color: $white-color;
+    margin-bottom: 19px;
+    z-index: 5;
+    transition: all 0.2s ease 0s;
+
+    &--accent {
+      font-size: 48px;
+      line-height: 0.96;
+      color: $text-color-title;
+    }
+
+    @media screen and (min-width: $min-width-tablet) {
+      font-size: 22px;
+      line-height: 1.13;
+      max-width: 162px;
+      margin-bottom: 20px;
+
+      &--accent {
+        font-size: 34px;
+        line-height: 0.91;
+        color: $text-color-title;
+      }
+    }
+    @media screen and (min-width: $min-width-desktop) {
+      font-size: 38px;
+      line-height: 1.15;
+      max-width: 277px;
+      margin-bottom: 25px;
+
+      &--accent {
+        font-size: 58px;
+        line-height: 0.9;
+        color: $text-color-title;
+      }
+    }
+  }
+
+  &__desc {
+    transition: all 0.2s ease 0s;
+
+    @media screen and (max-width: $max-width-mobile) {
+      display: none;
+    }
+
+    @media screen and (min-width: $min-width-tablet) {
+      font-family: DM Sans;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $white-color;
+      max-width: 136px;
+      margin-left: 154px;
+    }
+
+    @media screen and (min-width: $min-width-desktop) {
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 203px;
+      margin-left: 180px;
+    }
+  }
+
+  &__desc-text {
+    margin-bottom: 7px;
+    transition: all 0.2s ease 0s;
+
+    @media screen and (min-width: $min-width-desktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc-link {
+    @extend %flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $white-color;
+
+    @media screen and (min-width: $min-width-desktop) {
+      width: 26px;
+      height: 26px;
+    }
+
+    &-icon {
+      width: 6px;
+      height: 6px;
+      fill: $text-color-title;
+      border-radius: 50%;
+      transition: all 0.2s ease 0s;
+
+      @media screen and (min-width: $min-width-desktop) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    @media screen and (max-width: $max-width-mobile) {
+      display: none;
+    }
+  }
+}
+
+.primary-button {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.2s ease 0s;
+
+    @media screen and (min-width: $min-width-tablet) {
+      margin-bottom: 66px;
+    }
+    @media screen and (min-width: $min-width-desktop) {
+      margin-bottom: 112px;
+    }
+  }
+  &__item {
+    @extend %flex;
+    transition: all 0.2s ease 0s;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      @media screen and (min-width: $min-width-desktop) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.primary-button {
+  &__link {
+    @extend %link;
+    font-family: $primary-font-family;
+    font-size: 400;
+    color: inherit;
+  }
+}
+
+.bg-group {
+  transition: all 0.2s ease 0s;
+
+  @media screen and (max-width: 319px) {
+    display: none;
+  }
+
+  position: absolute;
+  bottom: 66px;
+  left: 36px;
+  margin: 0%;
+  border-radius: 50%;
+  background: $dark-pink-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 346px;
+  height: 344px;
+
+  &__icecream {
+    position: absolute;
+    top: 0;
+    left: 81px;
+    width: 171px;
+    height: 419px;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 324px;
+    height: 322px;
+    bottom: 46px;
+    left: 38%;
+
+    &__icecream {
+      top: 32px;
+      left: 71px;
+      width: 143px;
+      height: 336px;
+    }
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 538px;
+    height: 538px;
+    bottom: 75px;
+    left: 388px;
+
+    &__icecream {
+      top: 56px;
+      left: 119px;
+      width: 236px;
+      height: 360px;
+    }
+  }
+}
+
+.bg-group-secondary {
+  &__list {
+    @extend %list;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media screen and (max-width: $max-width-mobile) {
+      display: none;
+    }
+
+    @media screen and (min-width: $max-width-tablet) {
+      position: absolute;
+      transition: all 0.2s ease 0s;
+      right: 34px;
+      top: 0;
+
+      // &__item {
+      //   // width: 100%;
+      //   // display: flex;
+      //   // flex-direction: column;
+      //   // align-items: flex-end;
+
+      // }
+    }
+  }
+}
+.bg-group-secondary {
+  &__quantity {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    font-family: $title-font-family;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: $text-color-title;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      right: -15%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $white-color;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    @media screen and (min-width: $min-width-desktop) {
+      font-size: 46px;
+      line-height: 53px;
+      &::after {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__weight {
+    font-family: $primary-font-family;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: $white-color;
+
+    @media screen and (min-width: $min-width-desktop) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.hero__bg-milk {
+  position: absolute;
+  transition: all 0.2s ease 0s;
+
+  @media screen and (max-width: $max-width-mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 124px;
+    height: 126px;
+    left: 34px;
+    bottom: 28px;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 188px;
+    height: 191px;
+    left: -28px;
+    // bottom: 45px;
+  }
+}
+
+.hero__bg-tasty {
+  position: absolute;
+  bottom: 0;
+  right: 48px;
+  transition: all 0.2s ease 0s;
+
+  @media screen and (max-width: $max-width-mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 168px;
+    height: 133px;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 293px;
+    height: 232px;
+    right: 0;
+  }
+}
+
+//   button
+
+.primary-btn--dark,
+.primary-btn--light {
+  border-style: none;
+  border-radius: 20px;
+
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+
+  transition: $transition-hover-focus;
+
+  cursor: pointer;
+}
+
+.primary-btn--dark {
+  width: 61px;
+  height: 24px;
+  color: $white-color;
+  background-color: $text-color-title;
+
+  &:hover,
+  &focus {
+    background-color: $hover-crimson-btn;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 63px;
+    height: 24px;
+
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 102px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.primary-btn--light {
+  width: 83px;
+  height: 24px;
+
+  color: $text-color-title;
+  background-color: $white-color;
+
+  &:hover,
+  &focus {
+    background-color: $background-reviews;
+  }
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 83px;
+    height: 24px;
+
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: $min-width-desktop) {
+    width: 138px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
